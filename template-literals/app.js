@@ -1,21 +1,21 @@
 let humans = [{
-    name: "azam",
-    age: 18,
-    gender: "Male",
-    img: "images/chapter-1.png",
-},
-{
-    name: "haseeb",
-    age: 25,
-    gender: "Male",
-    img: "images/chapter-2.png",
-},
-{
-    name: "ahab",
-    age: 26,
-    gender: "Male",
-    img: "images/chapter-3.png",
-},
+        name: "azam",
+        age: 18,
+        gender: "Male",
+        img: "images/chapter-1.png",
+    },
+    {
+        name: "haseeb",
+        age: 25,
+        gender: "Male",
+        img: "images/chapter-2.png",
+    },
+    {
+        name: "ahab",
+        age: 26,
+        gender: "Male",
+        img: "images/chapter-3.png",
+    },
 ];
 
 let container = document.getElementById("container");
@@ -31,3 +31,8 @@ humans.forEach(human => {
     console.log(templateList);
     container.innerHTML = container.innerHTML + templateList;
 });
+
+function toggleClass() {
+    let classname = document.getElementById("container");
+    classname.classList.toggle("ul-toggle")
+}
